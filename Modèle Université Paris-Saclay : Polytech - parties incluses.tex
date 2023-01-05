@@ -52,27 +52,14 @@
 \fancypagestyle{plain}{
     \fancyhf{}
     \renewcommand{\headrulewidth}{0pt}
-    \fancyhead[L]{
-        \includegraphics[height = 12 mm]{Images/Logos/Logo.PoPS.pdf}
-    }
-
-    \fancyhead[R]{
-        \includegraphics[height = 12 mm]{Images/Logos/Logo.UPS.pdf}
-    }
-
-    \fancyfoot[L] {
-        \noindent\makebox[\textwidth]{\includegraphics[width=\paperwidth]{Images/Polytech/Lignes.png}}
-    }
+    \fancyhead[L] { \includegraphics[height = 12 mm]{Images/Logos/Logo.PoPS.pdf}                                    }
+    \fancyhead[R] { \includegraphics[height = 12 mm]{Images/Logos/Logo.UPS.pdf}                                     }
+    \fancyfoot[L] { \noindent\makebox[\textwidth]{\includegraphics[width=\paperwidth]{Images/Polytech/Lignes.png}}  }
 }
 
 % Règle applicable à toutes les pages sauf la première
-\fancyfoot[C]{
-    \thepage
-}
-
-\fancyhead[]{
-    \fancyhf
-}
+\fancyfoot[C]{ \thepage }
+\fancyhead[] { \fancyhf }
 
 \title{\textbf{Cours / TD • TP}\\Nom du module}
 \author{Cours par P\up{r}. Prénom NOM}

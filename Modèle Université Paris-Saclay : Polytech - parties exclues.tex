@@ -1,0 +1,76 @@
+\documentclass[11pt, a4paper, french]{article}
+\usepackage{lmodern}
+\usepackage{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin = 2.5 cm]{geometry}
+\usepackage{parskip, graphicx, tocloft} % Facultatif : permet de retirer les alinéas et surtout d'espacer les paragraphes
+\usepackage{fancyhdr, float}
+\usepackage{tikz}
+
+\pagestyle{fancy}
+
+% Titres des sections
+\renewcommand\thesection{\arabic{section}.                                                  }
+\renewcommand\thesubsection{\arabic{section}.\arabic{subsection}.                           }
+\renewcommand\thesubsubsection{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}. }
+
+% Table des matières
+\setcounter{tocdepth}{2}                    % Nombre max de niveau dans la table des matières
+
+\setlength{\cftbeforesecskip}{0.50 em}      % Espacement avant les titres des sections
+\setlength{\cftsecindent}{2.25 em}          % Espacement entre la marge le numéro des sections
+\setlength{\cftsecnumwidth}{2.25 em}        % Espacement entre le titre des sections et le numéro
+
+\setlength{\cftbeforesubsecskip}{0.25 em}   % Espacement avant les titres des sous-sections
+\setlength{\cftsubsecindent}{4.5 em}        % Espacement entre la marge le numéro des sous sections
+\setlength{\cftsubsecnumwidth}{2.875 em}    % Espacement entre le titre de la section et le numéro des sous sections
+
+% Pour aligner les points de la table des matières
+\makeatletter
+\renewcommand{\cftdotfill}[1]{
+    \def\@tempa{#1}
+    \def\@tempb{\cftnodots}
+    \ifx\@tempa\@tempb
+    \hfill
+    \else
+    \leaders\hbox to 2.25 mm{\hss\cftdot\hss}\hskip 4mm plus1fill
+    \fi
+}
+\makeatother
+
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\footskip}{40 pt}
+\setlength{\headheight}{50 pt}
+\setlength{\voffset}{-20pt}
+
+% Pour pouvoir écrire au-dessus d'une page où \maketitle est présent
+\fancypagestyle{plain}{
+    \fancyhf{}
+    \renewcommand{\headrulewidth}{0pt}
+    \fancyhead[L]{
+        \includegraphics[height = 12 mm]{/Users/dimitri.de-roeck/Tresorit/Images/Logos/Logo.PoPS.pdf}
+    }
+
+    \fancyhead[R]{
+        \includegraphics[height = 12 mm]{/Users/dimitri.de-roeck/Tresorit/Images/Logos/Logo.UPS.pdf}
+    }
+
+    \fancyfoot[L] {
+        \noindent\makebox[\textwidth]{\includegraphics[width=\paperwidth]{/Users/dimitri.de-roeck/Tresorit/Images/Logos/Lignes.png}}
+    }
+}
+
+% Règles applicables à toutes les pages sauf la première
+\fancyfoot[C]{ \thepage }
+\fancyhead[] { \fancyhf }
+
+\title  {\textbf{Cours / TD / TP}\\Nom du module    }
+\author {Cours par P\up{r}. X Y                     }
+\date   {Année 2022 - 2023                          }
+
+\begin{document}
+
+\maketitle
+
+\end{document}

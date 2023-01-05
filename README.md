@@ -11,8 +11,8 @@ Toute amélioration (*pull requests*) / suggestion (*issues*) est la bienvenue !
 # Modèles / *Templates*
 ## Cours / *Lecture class*
 ### Polytech Paris-Saclay
-Deux modèles seront disponibles pour l'école d'ingénieurs interne à l'université Paris-Saclay. Ils sont strictement identiques à la différence que ``.Parties.tex`` permet d'utiliser ``\part{...}`` pour que la table des matières lui affecte le premier nombre (1.X.Y) alors que si ce même fichier est utilisé sans les parties, les sections seront numérotées (0.1.Y). D'où l'existence de deux versions séparées.
+Deux modèles seront disponibles pour l'école d'ingénieurs interne à l'université Paris-Saclay. Ils sont strictement identiques à la différence que le fichier ``Modèle Université Paris-Saclay / Polytech - parties incluses.tex`` permet d'utiliser ``\part{...}`` pour que la table des matières lui affecte le premier nombre (1.X.Y) alors que si ce même fichier est utilisé sans les parties, les sections seront numérotées (0.1.Y). D'où l'existence de deux versions séparées.
 
-*Two models will be available of the internal engineering school of the université Paris-Saclay. They are perfectly identical except the ``.Parties.tex``files allows to ``\part`` to be recognized in the numbering.*
+*Two models will be available of the internal engineering school of the université Paris-Saclay. They are perfectly identical except the ``Modèle Université Paris-Saclay / Polytech - parties incluses.tex``file allows to ``\part`` to be recognized in the numbering.*
 
-> :bulb: Une contribution est la bienvenue pour savoir s'il existe une technique pour avoir les deux possibilités en une. A contribution is welcome to know if It exists a way to have both in one unique file.
+> :bulb: Une contribution est la bienvenue pour savoir s'il existe une technique pour avoir les deux possibilités en une. A contribution is welcome to know if It exists a way to have both in one unique file (?)
