@@ -13,7 +13,7 @@ Toute amélioration (*pull requests*) / suggestion (*issues*) est la bienvenue !
 ### Polytech Paris-Saclay
 Une variable booléenne (vrai/faux) permet de choisir si l'on souhaite avoir des parties (c'est-à-dire utiliser \part{}) ou non. Pour voir les différences concrètes, voir [ici](Exemples/Exemple%20-%20Université%20Paris-Saclay%20-%20Polytech%20(avec%20parties).pdf) et [là](Exemples/Exemple%20-%20Université%20Paris-Saclay%20-%20Polytech%20(sans%20parties).pdf).
 
-*A boolean variable (true/false) allows to choose if we want to use parts (\part{}) or not. To see the concrete diffrences, refer to [here](Exemples/Exemple%20-%20Université%20Paris-Saclay%20-%20Polytech%20(avec%20parties).pdf) and [there](Exemples/Exemple%20-%20Université%20Paris-Saclay%20-%20Polytech%20(sans%20parties).pdf).
+*A boolean variable (true/false) allows to choose if we want to use parts (\part{}) or not. To see the concrete diffrences, refer to [here](Exemples/Exemple%20-%20Université%20Paris-Saclay%20-%20Polytech%20(avec%20parties).pdf) and [there](Exemples/Exemple%20-%20Université%20Paris-Saclay%20-%20Polytech%20(sans%20parties).pdf).*
 
 Polytech Paris-Saclay a une charte « en surcouche », en plus de la charte du réseau Polytech, disponible [ici](https://intranet.polytech.universite-paris-saclay.fr/GED/pdf.js/web/viewer.html?file=/GED/Espace%20de%20publication/Communication/Charte%20graphique/%C3%89cole/CHARTE_POLYTECH_SACLAY_A2.pdf). À ce titre, les quatre lignes colorées, représentant les quatre spécialités sont en bas de la première page. 
 
