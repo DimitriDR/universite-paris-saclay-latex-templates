@@ -8,6 +8,11 @@ Toute amélioration (*pull requests*) / suggestion (*issues*) est la bienvenue !
 
 *Any improvement (*pull requests*) / suggestion (*issues*) is gladly welcomed!*
 
+# Important
+Les fichiers LaTeX doivent être configurés pour être compilés avec `xelatex`.
+
+*LaTeX files shall be configured to be compiled with `xelatex`.*
+
 # Modèles / *Templates*
 ## Cours / *Lecture class*
 ### Polytech Paris-Saclay

@@ -1,0 +1,140 @@
+\documentclass[11pt, a4paper, french]{letter}
+\usepackage{babel}
+\usepackage{opensans}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage[margin = 14.77 mm]{geometry}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+
+% Variables à définir pour la lettre
+% ------------------------------------------------------------------------------------
+
+% Permet de rajouter une ligne "Affaire suivie par" si pertinent.
+\newif\ifAffaireSuiviePar % 
+\AffaireSuiviePartrue % ou \AffaireSuivieParfalse
+
+\newcommand*{\NomAffaireSuiviePar}{Prénom NOM} % Nom de la personne qui suit l'affaire
+
+% Permet de rajouter une ligne "Référence" si pertinent.
+\newif\ifRéf % 
+\Réftrue % ou \Réffalse
+
+\newcommand*{\NuméroRéf}{Lorem Ipsum} % Numéro de la référence
+
+% Permet de rajouter une ligne "Pièce jointe" si pertinent.
+\newcommand*{\NombrePJ}{1}      % Nombre de pièces jointes
+
+% Permet de définir l'objet de la lettre
+\newcommand*{\Objet}{Lorem Ipsum} % Objet de la lettre
+
+% Permet de définir le lieu d'émission de la lettre
+\newcommand*{\Lieu}{Sceaux} % Lieu d'émission de la lettre
+
+% Permet de définir le nom de l'expéditeur
+\newcommand*{\Nom}{NOM DE L'EXPÉDITEUR} % Nom de l'expéditeur
+
+% Permet de définir le prénom de l'expéditeur
+\newcommand*{\Prénom}{Prénom} % Prénom de l'expéditeur
+
+% Permet de définir la fonction de l'expéditeur
+\newcommand*{\Fonction}{Fonction} % Fonction de l'expéditeur
+
+% Permet de définir le nom de la personne en copie
+\newcommand*{\CopieÀ}{Prénom NOM} % Nom de la personne en copie, laisser vide si pas de copie (fera disparaître la ligne)
+
+% Fin des variables à définir pour la lettre
+% ------------------------------------------------------------------------------------
+
+% On définit la police Open Sans selon la charte graphique de l'Université Paris-Saclay.
+% Si pour une raison quelconque, elle ne fonctionne pas, on peut utiliser la police Segoe UI puis Tahoma.
+\setmainfont{Open Sans}
+
+% Palette de couleurs de l'Université Paris-Saclay
+\definecolor{prune}{HTML}{63003C}
+
+% Le modèle définit CC complètement en gras, donc on le redéfinit
+\renewcommand{\cc}[1]{\textbf{Copie à : #1}}
+
+
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\footskip}{40 pt}
+\setlength{\headheight}{-14.77 mm}
+
+
+\fancypagestyle{plain}{
+  \fancyhf{}
+  % \fancyhead[L]{\includegraphics[height = 12 mm]{Images/Logos/Logo.UPS.pdf}}
+  \fancyfoot[L]{
+      \href{https://www.universite-paris-saclay.fr}{\textcolor{prune}{\textbf{www.universite-paris-saclay.fr}}}
+      \hspace{19.5 mm} \footnotesize{3 rue Joliot Curie, Bâtiment Breguet, 91190 Gif-sur-Yvette}
+  }
+}
+
+\pagestyle{plain}
+
+\makeatletter
+\let\ps@empty\ps@plain
+\let\ps@firstpage\ps@plain
+\makeatother
+
+\begin{document}
+
+\date{\Lieu\\le \today\\Nom et fonction\\à\\Madame Lorem Ipsum\\de Service Scolarité\\Institution Ipsum\\3 rue Joliot Curie\\Bâtiment Breguet\\91190 GIF-SUR-YVETTE}
+
+\begin{letter}{    
+    \ifAffaireSuiviePar
+    \textbf{Affaire suivie par}\\
+    \NomAffaireSuiviePar
+    \fi
+
+    \ifRéf
+    \textbf{Réf :}
+    \NuméroRéf
+    \fi
+
+    % Affichage du nombre de pièces jointes. Si 0, on affiche rien, si un, au singuler, sinon au pluriel
+    \ifnum\NombrePJ=0
+    \else
+      \ifnum\NombrePJ=1
+        \textbf{Pièce jointe :}
+        1
+      \else
+        \textbf{Pièces jointes :}
+        \NombrePJ
+      \fi
+    \fi
+
+    \textbf{Objet :} \Objet
+    
+    }
+
+\opening{Madame, Monsieur,}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt sem felis, eu lobortis diam tempus a. Proin id massa eros. Ut molestie congue est, vel blandit nulla luctus sit amet. Nullam et neque et quam finibus auctor nec fermentum nisl.
+
+Integer a enim blandit, imperdiet nisi a, fermentum purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla id risus vel tortor interdum pellentesque. Suspendisse tristique tincidunt augue in convallis. Ut commodo, ipsum eget porttitor sagittis, dolor ligula sagittis risus, non tempus elit purus non nisi. Nullam eget eros molestie, fringilla elit eget, iaculis justo.
+
+Proin sed eros ac enim tincidunt viverra quis et sapien. Sed accumsan condimentum lacinia. In eu feugiat tellus. Proin mattis hendrerit lacus id ultrices. Suspendisse sagittis sapien nibh, et consequat tellus dictum scelerisque. Nulla facilisi. Quisque eu tincidunt neque. Nam at massa vel eros fringilla ornare quis et magna. Cras efficitur eros sed ultricies facilisis. Fusce id tempor ipsum, laoreet auctor nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+
+Suspendisse euismod hendrerit orci, id congue libero dignissim rhoncus. Aliquam luctus urna ac nisi condimentum condimentum. Maecenas ac tincidunt elit. Sanctus in machina. 
+
+\closing{
+  Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées,\\
+  \vspace{7.5 mm}
+  \fromsig{\includegraphics[scale = 0.25]{Images/Signature.png}} \\
+  \vspace{7.5 mm}
+  \fromname{\Prénom\ \Nom\\ \Fonction}
+}
+
+\ifx\CopieÀ\empty
+\else
+\cc{\CopieÀ}
+\fi
+
+\end{letter}
+\end{document}

@@ -6,6 +6,7 @@
 *.fdb_latexmk
 *.synctex.gz
 *.toc
+*.xdv
 
 # We don't care about PDF files except in the Exemples folder
 # as they should show examples of the LaTeX code
