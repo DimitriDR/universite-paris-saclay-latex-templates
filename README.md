@@ -11,8 +11,10 @@ Toute amélioration (*pull requests*) / suggestion (*issues*) est la bienvenue !
 # Modèles / *Templates*
 ## Cours / *Lecture class*
 ### Polytech Paris-Saclay
-Deux modèles seront disponibles pour l'école d'ingénieurs interne à l'université Paris-Saclay. Ils sont strictement identiques à la différence que le fichier ``Modèle Université Paris-Saclay / Polytech - parties incluses.tex`` permet d'utiliser ``\part{...}`` pour que la table des matières lui affecte le premier nombre (1.X.Y) alors que si ce même fichier est utilisé sans les parties, les sections seront numérotées (0.1.Y). D'où l'existence de deux versions séparées.
+Une variable booléenne (vrai/faux) permet de choisir si l'on souhaite avoir des parties (c'est-à-dire utiliser \part{}) ou non. Pour voir les différences concrètes, voir [ici](Exemples/Exemple%20-%20Université%20Paris-Saclay%20-%20Polytech%20(avec%20parties).pdf) et [là](Exemples/Exemple%20-%20Université%20Paris-Saclay%20-%20Polytech%20(sans%20parties).pdf).
 
-*Two models will be available of the internal engineering school of the université Paris-Saclay. They are perfectly identical except the ``Modèle Université Paris-Saclay / Polytech - parties incluses.tex``file allows to ``\part`` to be recognized in the numbering.*
+*A boolean variable (true/false) allows to choose if we want to use parts (\part{}) or not. To see the concrete diffrences, refer to [here](Exemples/Exemple%20-%20Université%20Paris-Saclay%20-%20Polytech%20(avec%20parties).pdf) and [there](Exemples/Exemple%20-%20Université%20Paris-Saclay%20-%20Polytech%20(sans%20parties).pdf).
 
-> :bulb: Une contribution est la bienvenue pour savoir s'il existe une technique pour avoir les deux possibilités en une. A contribution is welcome to know if It exists a way to have both in one unique file (?)
+Polytech Paris-Saclay a une charte « en surcouche », en plus de la charte du réseau Polytech, disponible [ici](https://intranet.polytech.universite-paris-saclay.fr/GED/pdf.js/web/viewer.html?file=/GED/Espace%20de%20publication/Communication/Charte%20graphique/%C3%89cole/CHARTE_POLYTECH_SACLAY_A2.pdf). À ce titre, les quatre lignes colorées, représentant les quatre spécialités sont en bas de la première page. 
+
+*Polytech Paris-Saclay has its own corporate identity and style guide as "overlay", in addition to the Polytech network, available [here](https://intranet.polytech.universite-paris-saclay.fr/GED/pdf.js/web/viewer.html?file=/GED/Espace%20de%20publication/Communication/Charte%20graphique/%C3%89cole/CHARTE_POLYTECH_SACLAY_A2.pdf). Thus, the four colored lines, depicting the four specialities for the school, are added at the bottom of the first page*
